@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>	
+<head>
+<title>UWaterloo Schedule Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="keywords" content="UWaterloo Schedule Search" />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!--webfonts-->
+<link href='https://fonts.useso.com/css?family=PT+Sans:400,700,400italic,700italic|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.useso.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+<script src="https://ajax.useso.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+<script>$(document).ready(function(c) {
+	$('.close').on('click', function(c){
+		$('.login-form').fadeOut('slow', function(c){
+	  		$('.login-form').remove();
+		});
+	});	  
+});
+</script>
+ <!--SIGN UP-->
+ <h1 style="color:white ">UWaterloo Schedule Search</h1>
+<div class="login-form">
+<FORM METHOD = "POST" ACTION="https://info.uwaterloo.ca/cgi-bin/cgiwrap/infocour/salook.pl">	
+	<!--
+	<div class="close"> </div>
+		<div class="head-info">
+			<label class="lbl-1"> </label>
+			<label class="lbl-2"> </label>
+			<label class="lbl-3"> </label>
+		</div>
+			<div class="clear"> </div>
+	
+	<div class="avtar">
+		<img src="images/avtar.png" />
+	</div>
+	-->
+<INPUT TYPE="hidden" NAME="level" VALUE="under">
+<INPUT type="text" NAME="sess" SIZE="4" class="text" value="Term" onfocus="this.value = '1201';" onblur="if (this.value == '') {this.value = '1201';}" >
+<INPUT type="text" NAME="subject" SIZE="5" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}"  onkeyup="this.value=this.value.toUpperCase()" >
+<INPUT type="text" NAME="cournum" SIZE="5" class="text" value="Course Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Course Number';}" onkeyup="this.value=this.value.toUpperCase()" >
+
+<INPUT TYPE="submit" VALUE="Search!">
+			</form>
+
+</div>
+<H2>Term: 1199=Fall 2019, 1201=Winter 2020, 1205=Spring 2020</H2>
+
+ <div class="copy-rights">
+ 
+</FORM>
+			<p>Not affiliated with the University of Waterloo <br><a href="mailto:dale@zhiyaun.ca" >Contact: dale@zhiyuan.ca</p>
+			</div>
+
+</body>
+</html>
